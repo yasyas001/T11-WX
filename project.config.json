@@ -11,7 +11,7 @@
 		"newFeature": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.3.2",
+	"libVersion": "1.5.8",
 	"appid": "wx150f32dce7f08f44",
 	"projectname": "T11-WX",
 	"debugOptions": {
