@@ -1,2 +1,7 @@
 <!--pages/home/home.wxml-->
+<view>
 <text>pages/home/home.wxml</text>
+<button bindtap="goSkuDetail(1)">商品</button>
+</view>
+
+

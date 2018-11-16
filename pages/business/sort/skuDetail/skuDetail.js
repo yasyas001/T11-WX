@@ -1,5 +1,4 @@
-// pages/home/home.js
-const app = getApp()
+// pages/business/sort/skuDetail/skuDetail.js
 Page({
 
   /**
@@ -63,10 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  goSkuDetail:function(id){
-    wx.navigateTo({
-      url: '/skuDetail?id='+id
-    })
   }
 })
