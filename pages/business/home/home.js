@@ -1,4 +1,7 @@
 // pages/home/home.js
+var QQMapWX = require('../../../libs/qqmap-wx-jssdk.js');
+var qqmapsdk;
+
 const app = getApp()
 Page({
 
@@ -20,7 +23,44 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    // 实例化API核心类
+    qqmapsdk = new QQMapWX({
+      key: 'I6WBZ-JELWX-EFG4Q-TCDDY-P4CA2-2OBQC'
+    });
+    wx.getSetting({
+      success(res) {
+        console.log(res.authSetting)
+        if (!res.authSetting['scope.userLocation']) {
+          // wx.authorize({
+          //   scope: 'scope.userLocation',
+          //   success() {
+          // 用户已经同意小程序使用录音功能，后续调用 wx.startRecord 接口不会弹窗询问
+          wx.getLocation({
+            success: function (data) {
+              console.log(data);
 
+            }
+          });
+          //   }
+          // });
+          // wx.openSetting({
+          //   success(res) {
+          //     console.log(res.authSetting)
+             
+          //   }
+          // });
+         
+      }else{
+          wx.getLocation({
+            success: function (data) {
+              console.log(data);
+
+            }
+          });
+      }
+      }
+    });
+    console.log(qqmapsdk);
   },
 
   /**
@@ -34,6 +74,20 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+
+    // 调用接口
+    // qqmapsdk.search({
+    //   keyword: '酒店',
+    //   success: function (res) {
+    //     console.log(res);
+    //   },
+    //   fail: function (res) {
+    //     console.log(res);
+    //   },
+    //   complete: function (res) {
+    //     console.log(res);
+    //   }
+    // });
 
   },
 

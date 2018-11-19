@@ -1,5 +1,6 @@
 <!--pages/home/home.wxml-->
 <view class="page">
+<text>定位</text>
 	<view class="search">
 		<input class="wx-input" placeholder="🔍 寻找称心礼物1" placeholder-style="color: #bfbfbf; font-size: 30rpx; text-align:center;" />
 	</view>
@@ -60,6 +61,5 @@
 	</view>
 <button bindtap="goSkuDetail(1)">商品</button>
 	<view class="footer" bindtap="goIndexPage">北京锦益网络有限公司</view>
+
 </view>
-
-
