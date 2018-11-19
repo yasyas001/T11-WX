@@ -1,0 +1,26 @@
+.container {
+  width: 700rpx;
+  margin: 0 auto;
+}
+
+.head_nav {
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+}
+
+.store_addr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.store_addr image {
+  width: 30rpx;
+  height: 40rpx;
+  margin-right: 10rpx;
+}
+
+.store_addr text {
+  font-size: 24rpx;
+}

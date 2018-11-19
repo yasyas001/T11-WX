@@ -1,0 +1,12 @@
+<view class="container">
+  <view class='head_nav'>
+    <navigator url='' class='store_addr' hover-class='none'>
+      <image src="../../../images/dizhi.png"></image>
+      <text>a门店</text>
+    </navigator>
+    <view class='search_shop'>
+      <image src='../../../images/saoma.png' class='qr_code'></image>
+      <image src='../../../images/sousuo.png' class='search'></image>
+    </view>
+  </view>
+</view>
