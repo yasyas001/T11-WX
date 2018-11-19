@@ -4,14 +4,16 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
-		"newFeature": true
+		"newFeature": true,
+		"autoAudits": false,
+		"uglifyFileName": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "1.5.8",
+	"libVersion": "2.2.5",
 	"appid": "wxc7593d27193cde41",
 	"projectname": "T11-WX",
 	"debugOptions": {
