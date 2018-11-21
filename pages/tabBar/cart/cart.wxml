@@ -1,2 +1,39 @@
 <!--pages/cart/cart.wxml-->
-<text>购物车</text>
+<!-- 内容 -->
+<view class="content">
+  <!-- 购物车商品列表 -->
+  <checkbox-group class="cart-list" bindchange="checkedGoods">
+    <view wx:for="{{goods}}" wx:key="{{index}}" class="goods-item">
+      <view class="box" animation="{{animations[index]}}" data-index="{{index}}" bind:touchstart="logTouchDirection" bind:touchend="canShowDelete">
+        <label class="checkbox"><checkbox value="{{item.id}}" checked="{{checked[index]}}"></checkbox></label>
+        <navigator class="image" url="../home/home"><image src="{{item.imageUrl}}" mode="widthFix"></image></navigator>
+        <navigator class="info" url="../home/home">
+          <text class="title">{{item.title}}</text>
+          <view class="attrs">
+            <text>{{item.spec}}</text>
+            <text>{{item.prepare}}</text>
+            <text>{{item.reach}}</text>
+          </view>
+          <text class="title">￥{{item.price}}</text>
+        </navigator>
+        <counter value="{{checked[item.id].num}}" min="1" max="11"></counter>
+        <view class="delete"><text>删除</text></view>
+      </view>
+    </view>
+  </checkbox-group>
+  <!-- 推荐商品 -->
+  <view class="recommend">
+    <text class="title">为您推荐</text>
+    <view class="list">
+      <view wx:for="{{recommend}}" class="recommend-item">
+        <navigator class="goods" url=""><image src="{{item.imageUrl}}" mode="widthFix"></image></navigator>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 结算 -->
+<view class="total">
+  <label class="checkbox"><checkbox bindtap="chooseAll" checked="{{checkedAll}}"></checkbox>全选</label>
+  <text>合计：￥{{totalPrice}}</text>
+  <view class="btn-settle">结算</view>
+</view>

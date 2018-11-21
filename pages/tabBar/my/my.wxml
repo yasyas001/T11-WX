@@ -1,11 +1,44 @@
 <view class="page">
+  <!-- 用户信息 -->
   <view class="userinfo">
     <button class='userinfo-avatar' open-type="getUserInfo" bindgetuserinfo="getUserInfo">
       <image src="{{userInfo.avatarUrl}}" mode="scaleToFill"></image>
     </button>
     <view class="info">
-    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      <navigator class="coupons" url="../../my/coupon/coupon">
+        <view wx:for="{{coupons}}" class="coupon-item">{{item}}</view>
+      </navigator>
     </view>
   </view>
- 
+  <!-- 列表 -->
+  <view class="list">
+    <!-- 订单导航 -->
+    <view class="order">
+      <view class="order-head">
+        <text class="title">我的订单</text>
+        <navigator class="more" url="../../my/orderList/orderList?tab=0">
+          <text>查看全部订单 ></text>
+          <view class="arw-right"></view>
+        </navigator>
+      </view>
+      <view class="order-navs">
+        <navigator wx:for="{{orderNavs}}" wx:key="{{index}}" class="nav-item" url="../../my/orderList/orderList?tab={{index}}">{{item}}</navigator>
+      </view>
+    </view>
+    <!-- 功能列表 -->
+    <navigator class="func-list" url="../../my/address/address">收货地址</navigator>
+    <navigator class="func-list" url="../../my/invoice/invoice">发票</navigator>
+    <navigator class="func-list" url="../../my/customService/customService">客服</navigator>
+    <navigator class="func-list" url="../../my/config/config">设置</navigator>
+    <!-- Banner -->
+    <swiper class="swiper" indicator-dots="{{indicatorDots}}"
+      autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" width="355" height="40"/>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
 </view>

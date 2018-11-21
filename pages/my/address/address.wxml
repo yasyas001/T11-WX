@@ -1,0 +1,8 @@
+<!--pages/my/address/address.wxml-->
+<view class="page">
+  <!-- 头部搜索栏 -->
+  <view class="search">
+    <view class="location">北京</view>
+    <input placeholder="搜索写字楼、小区"></input>
+  </view>
+</view>

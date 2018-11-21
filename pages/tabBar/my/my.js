@@ -9,6 +9,16 @@ Page({
     motto: 'Hello World',
     userInfo: { avatarUrl: "/images/main.png", nickName:"Hi,游客"},
     hasUserInfo: false,
+    coupons: ["优惠券", "优惠券", "优惠券"],
+    orderNavs: ["待付款", "待配送", "待收货", "已完成"],
+    imgUrls: [
+      'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg',
+      'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'
+    ],
+    indicatorDots: true,
+    autoplay: true,
+    interval: 3000,
+    duration: 1000,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
   //事件处理函数

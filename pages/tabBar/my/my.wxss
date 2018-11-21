@@ -1,8 +1,12 @@
 /* pages/my/my.wxss */
+.navigator-hover {
+  background: transparent;
+}
+
 .userinfo {
   flex-direction: row;
   width: 100%;
-  height: 280rpx;
+  height: 240rpx;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -18,10 +22,10 @@
   width: 128rpx;
   border-radius: 50%;
 }
+
 .userinfo-avatar image{
   height: 128rpx;
   width: 128rpx;
-  
 }
 
 .userinfo-nickname {
@@ -30,3 +34,68 @@
   margin-left: 20rpx;
 }
 
+/* 优惠券 */
+.coupons {
+  display: flex;
+  padding: 10rpx 20rpx;
+}
+
+.coupons .coupon-item {
+  padding: 4rpx 8rpx;
+  margin-right: 20rpx;
+  background: #e93838;
+  font: 32rpx/50rpx "microsoft yahei";
+  color: #fff;
+}
+
+/* 列表 */
+.list {
+  padding: 40rpx 20rpx;
+}
+
+/* 订单导航 */
+.order-head {
+  display: flex;
+}
+
+.order-head .title {
+  flex: 1;
+  padding-left: 10rpx;
+  font: 40rpx/60rpx "microsoft yahei";
+  color: #333;
+}
+
+.order-head .more {
+  font: 34rpx/60rpx "microsoft yahei";
+  color: #666;
+}
+
+.order-navs {
+  display: flex;
+  justify-content: center;
+}
+
+.order-navs .nav-item {
+  flex: 1;
+  text-align: center;
+  margin: 30rpx 10rpx 20rpx;
+  padding: 10rpx;
+  font-size: 34rpx;
+  background: #e1e1e1;
+}
+
+/* 功能列表 */
+.func-list {
+  margin: 10rpx 0;
+  padding: 10rpx 0 10rpx 10rpx;
+  font: 40rpx/60rpx "microsoft yahei";
+  color: #333;
+}
+
+/* banner */
+.swiper {
+  height: 200rpx;
+  margin-top: 30rpx;
+  border-radius: 10rpx;
+  overflow: hidden;
+}

@@ -3,7 +3,13 @@
     "pages/tabBar/home/home",
     "pages/tabBar/sort/sort",
     "pages/tabBar/cart/cart",
-    "pages/tabBar/my/my"
+    "pages/tabBar/my/my",
+    "pages/my/address/address",
+    "pages/my/config/config",
+    "pages/my/coupon/coupon",
+    "pages/my/customService/customService",
+    "pages/my/invoice/invoice",
+    "pages/my/orderList/orderList"
   ],
   "window": {
     "backgroundTextStyle": "light",

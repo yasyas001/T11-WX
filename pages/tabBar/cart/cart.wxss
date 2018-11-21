@@ -1,1 +1,138 @@
-/* pages/cart/cart.wxss */
+page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.wx-checkbox-input {
+  border-radius: 50%!important;
+}
+
+.content {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden; 
+  box-sizing: border-box;
+}
+
+.content::-webkit-scrollbar {
+  position: absolute;
+  width: 0rpx;
+}
+
+/* 购物车列表 */
+.cart-list {
+  padding: 20rpx;
+}
+.goods-item {
+  display: flex;
+  margin-bottom: 20rpx;
+  background: #f3f3f3;
+  overflow: hidden;
+}
+
+.goods-item .box {
+  position: relative;
+  left: 0;
+  display: flex;
+  width: 100%;
+  padding: 20rpx;
+  align-items: center;
+}
+
+.goods-item .checkbox {
+  padding-right: 20rpx;
+}
+
+.goods-item image {
+  display: block;
+  width: 200rpx;
+}
+
+.goods-item .info {
+  padding: 0 20rpx;
+}
+.goods-item .attrs {
+  padding: 10rpx 0;
+}
+
+.goods-item .attrs text {
+  display: block;
+  font-size: 30rpx;
+  line-height: 40rpx;
+  white-space: nowrap;
+}
+
+.goods-item .delete {
+  display: flex;
+  position: absolute;
+  right: -160rpx;
+  top: 0;
+  width: 160rpx;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  background: #fc4141;
+  color: #fff;
+  overflow: hidden;
+}
+
+/* 为您推荐 */
+.recommend .title {
+  display: block;
+  margin: 30rpx 0 20rpx;
+  text-align: center;
+  font: 50rpx;
+}
+
+.recommend .list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.recommend-item {
+  width: 50%;
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+
+.recommend-item .goods image {
+  width: 100%;
+}
+
+
+
+
+/* 结算 */
+.total {
+  display: flex;
+  align-items: center;
+  height: 100rpx;
+  background: #f1f1f1;
+}
+
+.total .checkbox {
+  padding: 0 20rpx;
+  line-height: 100rpx;
+}
+
+.total .checkbox .wx-checkbox-input {
+  margin-top: -10rpx;
+}
+
+.total text {
+  flex: 1;
+  padding: 0 20rpx;
+  text-align: right;
+  font-size: 36rpx;
+}
+
+.total .btn-settle {
+  padding: 0 80rpx;
+  font-size: 36rpx;
+  line-height: 100rpx;
+  background: #ccc;
+}
