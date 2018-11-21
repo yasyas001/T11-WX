@@ -10,6 +10,7 @@ Page({
     animations: [],
     checkedAll: false,
     checked: {},
+    num: [],
     goods: [
       {
         id: 1,

@@ -16,7 +16,7 @@
           </view>
           <text class="title">￥{{item.price}}</text>
         </navigator>
-        <counter value="{{checked[item.id].num}}" min="1" max="11"></counter>
+        <counter value="{{num[item.id]}}" min="1" max="11"></counter>
         <view class="delete"><text>删除</text></view>
       </view>
     </view>
