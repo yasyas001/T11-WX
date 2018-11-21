@@ -9,7 +9,8 @@
     "pages/my/coupon/coupon",
     "pages/my/customService/customService",
     "pages/my/invoice/invoice",
-    "pages/my/orderList/orderList"
+    "pages/my/orderList/orderList",
+    "pages/my/editAddress/editAddress"
   ],
   "window": {
     "backgroundTextStyle": "light",

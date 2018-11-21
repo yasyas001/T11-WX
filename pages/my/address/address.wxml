@@ -1,8 +1,19 @@
 <!--pages/my/address/address.wxml-->
 <view class="page">
-  <!-- 头部搜索栏 -->
-  <view class="search">
-    <view class="location">北京</view>
-    <input placeholder="搜索写字楼、小区"></input>
+  <!-- 地址列表 -->
+  <view class="address">
+    <view class="head">收货地址</view>
+    <view class="list">
+      <view class="item" wx:for="{{[1,2,3,4]}}">
+        <view class="info">
+          <view class="name">姓名电话</view>
+          <view class="addr">湖北省武汉市</view>
+        </view>
+        <navigator class="edit" url="../editAddress/editAddress">编辑</navigator>
+      </view>
+    </view>
+  </view>
+  <view class="btm">
+    <navigator class="btn" url="../editAddress/editAddress">新建地址</navigator>
   </view>
 </view>

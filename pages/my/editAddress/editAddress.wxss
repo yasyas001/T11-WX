@@ -1,0 +1,44 @@
+/* pages/my/editAddress/editAddress.wxss */
+.page {
+  padding: 20rpx;
+}
+
+.form {
+  padding-bottom: 20rpx;
+}
+
+.form .item {
+  display: flex;
+  align-items: center;
+  padding: 10rpx 0;
+}
+
+.form .item .head {
+  width: 160rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  padding: 0 20rpx;
+  background: #d1d1d1;
+}
+
+.form .item .ctn {
+  flex: 1;
+  padding-left: 20rpx;
+}
+
+.form .item .ctn input {
+  height: 80rpx;
+  line-height: 80rpx;
+}
+
+.page .btm {
+  display: flex;
+  padding: 40rpx;
+  justify-content: center;
+}
+
+.page .btn {
+  padding: 20rpx 140rpx;
+  background: #c1c1c1;
+  border-radius: 10rpx;
+}

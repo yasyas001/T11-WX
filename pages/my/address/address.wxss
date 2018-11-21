@@ -1,1 +1,57 @@
 /* pages/my/address/address.wxss */
+page {
+  width: 100%;
+  height: 100%;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+/* 收货地址列表 */
+.page .address {
+  flex: 1;
+  height: 100%;
+  padding: 20rpx;
+  overflow-y: auto;
+}
+
+.address .head {
+  font-size: 36rpx;
+  color: #aeaeae;
+}
+
+.address .item {
+  display: flex;
+  padding: 20rpx 0;
+  margin-bottom: 10rpx;
+}
+
+.address .item .info {
+  flex: 1;
+}
+
+.address .item .name {
+  font-size: 50rpx;
+  padding-bottom: 10rpx;
+}
+
+.address .item .addr {
+  font-size: 40rpx;
+}
+
+/* 新建地址 */
+.page .btm {
+  display: flex;
+  padding: 40rpx;
+  align-self: center;
+}
+
+.page .btn {
+  padding: 20rpx 140rpx;
+  background: #c1c1c1;
+  border-radius: 10rpx;
+}

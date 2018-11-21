@@ -4,11 +4,13 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
-		"newFeature": true
+		"newFeature": true,
+		"autoAudits": false,
+		"uglifyFileName": true
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.4.0",
@@ -36,7 +38,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 5,
+			"current": 6,
 			"list": [
 				{
 					"id": -1,
@@ -69,9 +71,15 @@
 					"query": ""
 				},
 				{
+					"id": 5,
+					"name": "收货地址列表",
+					"pathName": "pages/my/address/address",
+					"query": ""
+				},
+				{
 					"id": -1,
-					"name": "cart",
-					"pathName": "pages/tabBar/cart/cart",
+					"name": "收货地址编辑/新建",
+					"pathName": "pages/my/editAddress/editAddress",
 					"query": ""
 				}
 			]
