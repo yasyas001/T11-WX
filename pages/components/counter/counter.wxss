@@ -1,0 +1,25 @@
+/* pages/components/counter/counter.wxss */
+.counter {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.counter .minus,
+.counter .plus {
+  width: 56rpx;
+  height: 56rpx;
+  border-radius: 50%;
+  background: #bebebe;
+  font-size: 44rpx;
+  line-height: 46rpx;
+  text-align: center;
+}
+
+.counter input {
+  flex: 1;
+  height: 52rpx;
+  margin: 0 10rpx;
+  border: solid 1rpx #999;
+  text-align: center;
+}

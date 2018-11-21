@@ -1,0 +1,6 @@
+<!--pages/components/counter/counter.wxml-->
+<view class="counter">
+  <view class="minus" bindtap="calcMinus">-</view>
+  <input type="number" value="{{value}}"></input>
+  <view class="plus" bindtap="calcPlus">+</view>
+</view>
