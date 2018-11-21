@@ -33,6 +33,26 @@ App({
       }
     })
   },
+  showToast: false,
+  requestTimer: null,
+  request(req, duration) {
+    let _this = this;
+    let obj = Object.assign({
+      baseUrl: "",
+      method: "GET",
+      dataType: "JSON"
+    }, req);
+    obj.url = obj.baseUrl + req.url;
+    obj.success = function (data) {
+      clearTimeout(_this.requestTimer);
+      _this.requestTimer = setTimeout(function () {
+        _this.showToast = false;
+      }, duration || 500);
+      req.success(data);
+    }
+    _this.showToast = true;
+    wx.request(obj);
+  },
   globalData: {
     userInfo: null
   }

@@ -4,10 +4,9 @@
 }
 
 .userinfo {
-  flex-direction: row;
-  width: 100%;
-  height: 240rpx;
   display: flex;
+  height: 240rpx;
+  flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: flex-start;
@@ -98,4 +97,7 @@
   margin-top: 30rpx;
   border-radius: 10rpx;
   overflow: hidden;
+}
+.swiper image{
+  width: 100%;
 }
