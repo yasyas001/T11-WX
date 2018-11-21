@@ -33,6 +33,7 @@ App({
       }
     })
   },
+  // 请求方法
   showToast: false,
   requestTimer: null,
   request(req, duration) {
@@ -52,6 +53,45 @@ App({
     }
     _this.showToast = true;
     wx.request(obj);
+  },
+  // API授权方法
+  wxAuth(name) {
+    const api = {
+      "getUserInfo": "userInfo",
+      "getLocation": "userLocation",
+      "chooseLocation": "userLocation",
+      "openLocation": "userLocation",
+      "chooseAddress": "address",
+      "chooseInvoiceTitle": "invoiceTitle",
+      "chooseInvoice": "invoice",
+      "getWeRunData": "werun",
+      "startRecord": "record",
+      "saveImageToPhotosAlbum": "writePhotosAlbum",
+      "saveVideoToPhotosAlbum": "writePhotosAlbum",
+      "camera": "camera"
+    }
+    return new Promise((resolve, reject) => {
+      wx.authorize({
+        scope: `scope.${api[name]}`,
+        success: (res) => {
+          if(name !== "camera") {
+            wx[name]({
+              success: (data) => {
+                resolve(data);
+              },
+              fail: (data) => {
+                reject(data);
+              }
+            })
+          } else {
+            resolve(wx.createCameraContext());
+          }
+        },
+        fail: (res) => {
+          reject(res);
+        }
+      });
+    });
   },
   globalData: {
     userInfo: null
