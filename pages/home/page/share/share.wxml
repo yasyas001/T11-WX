@@ -1,0 +1,11 @@
+<view class="container">
+  <view class='sharePoster'>
+    <text>分享海报</text>
+  </view>
+  <view class='shareType'>
+    <view></view>
+    <view></view>
+    <view></view>
+  </view>
+  <button class='shareBtn'>立即分享</button>
+</view>

@@ -1,2 +1,33 @@
-<!--pages/sort/sort.wxml-->
-<text>分类</text>
+<view class="container">
+  <view class='shopType'>
+    <view wx:for="{{shopType}}" class='column {{shopTypeIndex == index ? "active":""}}' data-type-index="{{index}}" bindtap='choiceType'>{{item}}</view>
+  </view>
+  <view class='typeDetail'>
+    <view class='banner'>
+      <swiper autoplay="true" interval="3000" duration="500" circular="true">
+        <swiper-item wx:for="{{3}}">
+          <view>banner{{item}}</view>
+        </swiper-item>
+      </swiper>
+    </view>
+    <view class='categoryTags'>
+      <view class='tag'>全部</view>
+      <view class='tag'>浆果</view>
+      <view class='tag'>柑橘</view>
+      <view class='tag'>葡萄</view>
+    </view>
+    <view class='shopList'>
+      <view class='shopInfo' wx:for="{{shopList}}">
+        <image class='shopImg' src='{{item.img}}'></image>
+        <view class='info'>
+          <view class='shopName'>{{item.name}}</view>
+          <view class='shopPrice'>{{item.price}}元</view>
+          <view class='shopNum'>
+            <text class='curNum'>{{item.num}}</text>
+            <image src='../../../images/jia.png' class='addNum'></image>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

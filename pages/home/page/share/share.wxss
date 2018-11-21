@@ -1,0 +1,48 @@
+.container {
+  padding: 50rpx 25rpx;
+  overflow: hidden;
+}
+
+.sharePoster {
+  width: 700rpx;
+  height: 500rpx;
+  background: #f2f2f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sharePoster text {
+  font-size: 30rpx;
+  color: #666;
+}
+
+.shareType {
+  margin: 0 auto;
+  margin-top: 50rpx;
+  width: 600rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.shareType view {
+  width: 100rpx;
+  height: 100rpx;
+  background: #f2f2f2;
+  border-radius: 50rpx;
+}
+
+.shareBtn {
+  width: 600rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  margin-top: 50rpx;
+  font-size: 30rpx;
+  border-radius: 25rpx;
+  background: red;
+  color: #fff;
+}
+
+.shareBtn::after {
+  border: 0;
+}

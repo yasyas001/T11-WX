@@ -1,26 +1,155 @@
-.container {
-  width: 700rpx;
-  margin: 0 auto;
-}
-
 .head_nav {
+  width: 700rpx;
   height: 100rpx;
-  display: flex;
-  align-items: center;
-}
-
-.store_addr {
+  margin: 0 auto; 
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
+.store_addr {
+  display: flex;
+  align-items: center;
+}
+
 .store_addr image {
-  width: 30rpx;
+  width: 35rpx;
   height: 40rpx;
   margin-right: 10rpx;
 }
 
 .store_addr text {
+  font-size: 30rpx;
+}
+
+
+.search_shop image {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.search_shop .qr_code {
+  margin-right: 50rpx;
+}
+
+.pay_code {
+  background: #f2f2f2;
+  overflow: hidden;
+  padding: 20rpx 0;
+}
+
+.pay_code .content {
+  width: 600rpx;
+  margin: 0 auto;
+}
+
+.pay_code_txt {
   font-size: 24rpx;
+  color: #666;
+}
+
+.pay_code_image {
+  width: 100%;
+  height: 200rpx;
+  background: #666;
+  margin-top: 10rpx;
+  text-align: center;
+  line-height: 200rpx;
+}
+
+.pay_code_image text {
+  font-size: 30rpx;
+  color: #fff;
+}
+
+#shop {
+  padding: 20rpx 25rpx;
+  overflow: hidden;
+}
+
+.shop_type {
+  white-space: nowrap;
+  overflow: hidden
+}
+
+.type {
+  width: 200rpx;
+  margin-right: 20rpx;
+  display:inline-block; 
+}
+
+.type:nth-last-child(1) {
+  margin-right: 0;
+}
+
+.type_img {
+  width: 100%;
+  height: 150rpx;
+  background: #f2f2f2;
+}
+
+.type_name {
+  font-size: 24rpx;
+  color: #666;
+  text-align: center;
+  margin-top: 10rpx;
+}
+
+.banner {
+  overflow: hidden;
+}
+
+.bannerList {
+  overflow: hidden;
+  width: 100%;
+  height: 200rpx;
+  margin-top: 20rpx;
+}
+
+.bannerList swiper-item {
+  overflow: hidden;
+}
+
+.item_banner {
+  display: inline-block;
+  width: 100%;
+  height: 200rpx;
+  line-height: 200rpx;
+  text-align: center;
+  background: #666;
+  border-radius: 10rpx;
+  color: #fff;
+}
+
+.category > view {
+  margin-top: 30rpx;
+}
+
+.category .title {
+  font-size: 30rpx;
+}
+
+.category .column_list {
+  margin-top: 10rpx;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.category .column {
+  width: 250rpx;
+  height: 150rpx;
+  background: #f2f2f2;
+  border-radius: 10rpx;
+  display: inline-block;
+  margin-right: 20rpx;
+}
+
+.category .column image {
+  width: 100%;
+  height: 100%;
+}
+
+.category .column:nth-last-child(1) {
+  margin-right: 0;
 }

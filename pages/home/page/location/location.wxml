@@ -1,0 +1,24 @@
+<view class="container">
+  <view class='location'>
+    <view class='curLocation'>
+      <image src="../../../../images/dizhi.png"></image>
+      <text>北京</text>
+      <input placeholder='搜索写字楼，小区'></input>
+    </view>
+    <view class='reLocation'>
+      <text class='title'>当前地址</text>
+      <view class='addr'>
+        <text>武汉市洪山区app广场</text>
+        <text>重新定位</text>
+      </view>
+    </view>
+    <view class='receiveAddress'>
+      <text class='title'>收货地址</text>
+      <view class='addr'>
+        <text>武汉市洪山区南湖大道茶山刘</text>
+        <text>编辑</text>
+      </view>
+    </view>
+    <button class="addAddress">新建地址</button>
+  </view>
+</view>

@@ -1,12 +1,63 @@
 <view class="container">
   <view class='head_nav'>
-    <navigator url='' class='store_addr' hover-class='none'>
+    <navigator url='../../home/page/location/location' class='store_addr' hover-class='none'>
       <image src="../../../images/dizhi.png"></image>
       <text>a门店</text>
     </navigator>
     <view class='search_shop'>
-      <image src='../../../images/saoma.png' class='qr_code'></image>
-      <image src='../../../images/sousuo.png' class='search'></image>
+      <image src='../../../images/saoma.png' class='qr_code' bindtap='scavenging'></image>
+      <image src='../../../images/sousuo.png' class='search' bindtap='searchShop'></image>
+    </view>
+  </view>
+  <view class='pay_code'>
+    <view class='content'>
+      <view class='pay_code_txt'>
+        <text>结账出示</text>
+      </view>
+      <image src='../../../images/code.jpg' class='pay_code_image'></image>
+    </view>
+  </view>
+  <view id="shop">
+    <view class='shop_type'>
+      <scroll-view scroll-x="true">
+        <view class='type' wx:for="{{shop}}">
+          <image class='type_img' src='../../../images/shop.jpg'></image>
+          <view class='type_name'>{{item.typeName}}</view>
+        </view>
+      </scroll-view>
+    </view>
+    <view class='banner'>
+      <swiper autoplay="true" interval="3000" duration="500" circular="true" class='bannerList'>
+        <swiper-item wx:for="{{10}}">
+          <view class='item_banner'>banner{{item+1}}</view>
+        </swiper-item>
+      </swiper>
+    </view>
+    <view class='category'>
+      <view class='fruits'>
+        <text class='title'>水果</text>
+        <scroll-view scroll-x class='column_list'>
+          <navigator url='../../home/page/shopDetail/shopDetail' wx:for="{{5}}" class='column'>
+            <image src='../../../images/shop.jpg'></image>
+          </navigator>
+        </scroll-view>
+      </view>
+      <view class='meat'>
+        <text class='title'>肉类</text>
+        <scroll-view scroll-x class='column_list'>
+          <navigator url='../../home/page/shopDetail/shopDetail' wx:for="{{5}}" class='column'>
+            <image src='../../../images/meat.jpg'></image>
+          </navigator>
+        </scroll-view>
+      </view>
+      <view class='eggs'>
+        <text class='title'>蛋类</text>
+        <scroll-view scroll-x class='column_list'>
+          <navigator url='../../home/page/shopDetail/shopDetail' wx:for="{{5}}" class='column'>
+            <image src='../../../images/eggs.jpg'></image>
+          </navigator>
+        </scroll-view>
+      </view>
     </view>
   </view>
 </view>

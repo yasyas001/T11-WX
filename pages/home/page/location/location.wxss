@@ -1,0 +1,55 @@
+.container {
+  width: 700rpx;
+  margin: 0 auto;
+}
+
+.curLocation {
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+}
+
+.curLocation image {
+  width: 35rpx;
+  height: 40rpx;
+  margin-right: 10rpx;
+}
+
+.curLocation text {
+  font-size: 30rpx;
+  margin-right: 30rpx;
+}
+
+.curLocation input {
+  width: 500rpx;
+  height: 50rpx;
+  padding: 0 25rpx;
+  line-height: 50rpx;
+  overflow: hidden;
+  background: #f2f2f2;
+  font-size: 24rpx;
+  border-radius: 25rpx;
+}
+
+.reLocation .title, .receiveAddress .title {
+  font-size: 24rpx;
+}
+
+.reLocation .addr, .receiveAddress .addr {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24rpx;
+  margin-top: 10rpx;
+}
+
+.receiveAddress {
+  margin-top: 50rpx;
+}
+
+.addAddress {
+  width: 500rpx;
+  margin-top: 300rpx;
+  border: 0;
+  background: red;
+  color: #fff;
+}

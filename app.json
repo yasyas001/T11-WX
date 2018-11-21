@@ -47,7 +47,9 @@
       "root": "pages/home/",
       "pages": [
         "page/shopDetail/shopDetail",
-        "page/test/test"
+        "page/location/location",
+        "page/searchShop/searchShop",
+        "page/share/share"
       ]
     }
   ]

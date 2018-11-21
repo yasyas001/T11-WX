@@ -1,11 +1,10 @@
-// pages/business/sort/skuDetail/skuDetail.js
+// pages/home/page/share/share.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
   },
 
   /**

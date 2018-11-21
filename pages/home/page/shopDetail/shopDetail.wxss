@@ -1,1 +1,78 @@
-/* pages/home/page/shopDetail/shopDetail.wxss */
+.shopImg {
+  width: 100%;
+  height: 400rpx;
+}
+
+.shopImg image {
+  width: 100%;
+  height: 100%;
+}
+
+.shopInfo {
+  padding: 20rpx;
+  overflow: hidden;
+  position: relative;
+}
+
+.shopInfo .share {
+  position: absolute;
+  right: 25rpx;
+  top: 30rpx;
+  font-size: 30rpx;
+}
+
+.shopName, .shopPrice {
+  font-size: 30rpx;
+}
+
+.shopName, .shopPrice, .shopSpec, .shopTags, .shopDetail {
+  margin-top: 20rpx;
+}
+
+.shopTags {
+  font-size: 28rpx;
+  display: flex;
+}
+
+.shopTags .tag {
+  margin-right: 20rpx;
+  width: 150rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  background: #f2f2f2;
+}
+
+.shopDetail {
+  width: 100%;
+  height: 300rpx;
+  background: #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shopDetail text {
+  font-size: 30rpx;
+  color: #fff;
+}
+
+.addCart {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100rpx;
+}
+
+.addCart button {
+  width: 500rpx;
+  margin: 0 auto;
+  background: red;
+  color: #fff;
+}
+
+.addCart button::after {
+  border-radius: 0;
+  border: 0;
+}
