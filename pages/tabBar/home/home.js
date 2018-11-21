@@ -1,4 +1,6 @@
 // pages/tabBar/home/home.js
+var QQMapWX = require('../../../libs/qqmap-wx-jssdk.js');
+var qqmapsdk;
 Page({
 
   /**
@@ -12,7 +14,9 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    qqmapsdk = new QQMapWX({
+      key: 'R5WBZ-KMXWU-TJTVO-4UOP5-EB4IZ-V2FG7'
+    });
   },
 
   /**
@@ -26,7 +30,19 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    // 调用接口
+    qqmapsdk.search({
+      keyword: '酒店',
+      success: function (res) {
+        console.log(res);
+      },
+      fail: function (res) {
+        console.log(res);
+      },
+      complete: function (res) {
+        console.log(res);
+      }
+    });
   },
 
   /**
