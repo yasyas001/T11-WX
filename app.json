@@ -59,6 +59,19 @@
         "page/searchShop/searchShop",
         "page/share/share"
       ]
+    },
+    {
+      "root": "pages/my/",
+      "pages": [
+        "address/address",
+        "config/config",
+        "coupon/coupon",
+        "customService/customService",
+        "invoice/invoice",
+        "orderList/orderList",
+        "editAddress/editAddress",
+        "qrcode/qrcode"
+      ]
     }
   ]
 }
