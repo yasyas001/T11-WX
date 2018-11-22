@@ -7,7 +7,7 @@ Page({
    * 页面的初始数据 h
    */
   data: {
-
+    addressName:"定位中..."
   },
 
   /** 
@@ -17,6 +17,33 @@ Page({
     qqmapsdk = new QQMapWX({
       key: 'R5WBZ-KMXWU-TJTVO-4UOP5-EB4IZ-V2FG7'
     });
+    // wx.chooseLocation({
+    //   success(res) {
+    //     console.log(res);
+    //   }
+    // })
+    const that = this;
+    wx.getLocation({
+      type: 'wgs84',
+      success(res) {
+        console.log(res);
+        qqmapsdk.reverseGeocoder({
+          poi_options: 'policy=2',
+          success: function (res) {
+            console.log(res);
+            that.setData({
+              addressName: res.result.formatted_addresses
+.recommend
+            })
+          },
+          fail: function (res) {
+            that.setData({
+              addressName: "定位失败"
+            })
+          }
+        });
+      }
+    })
   },
 
   /** 
@@ -38,29 +65,28 @@ Page({
   /**
    * 扫码
    */
+
   scavenging() {
     wx.scanCode({
       
     })
   },
 
-  /** 
-   * 生命周期函数--监听页面显示 
-   */
-  onShow: function() {
-    // 调用接口 
-    qqmapsdk.search({
-      keyword: '酒店',
-      success: function(res) {
-        console.log(res);
-      },
-      fail: function(res) {
-        console.log(res);
-      },
-      complete: function(res) {
-        console.log(res);
-      }
-    });
+  onShow: function () {
+    // 调用接口
+    // qqmapsdk.search({
+    //   keyword: '酒店',
+    //   success: function (res) {
+    //     console.log(res);
+    //   },
+    //   fail: function (res) {
+    //     console.log(res);
+    //   },
+    //   complete: function (res) {
+    //     console.log(res);
+    //   }
+    // });
+
   },
 
   /** 
