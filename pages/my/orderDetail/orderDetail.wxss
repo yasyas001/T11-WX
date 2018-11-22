@@ -1,0 +1,248 @@
+/* pages/my/orderDetail/orderDetail.wxss */
+page {
+  width: 100%;
+  height: 100%;
+}
+
+.navigator-hover {
+  background: transparent;
+}
+
+.page {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  background: #e1e1e1;
+}
+
+.page .content {
+  flex: 1;
+  height: 100%;
+  overflow: auto;
+}
+
+.page .content::-webkit-scrollbar {
+  width: 0;
+}
+
+/* 状态栏 */
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200rpx;
+  background: #ccc;
+}
+
+/* 收货人 */
+.reciver {
+  padding: 40rpx;
+  margin-bottom: 20rpx;
+  background: #fff;
+}
+
+.reciver .base {
+  display: flex;
+  padding-bottom: 20rpx;
+  font-size: 36rpx;
+}
+
+.reciver .base .name {
+  flex: 1;
+}
+
+.reciver .addr {
+  font-size: 36rpx;
+  color: #999;
+}
+
+/* 订单商品 */
+.packages {
+  padding: 40rpx;
+  margin-bottom: 20rpx;
+  background: #fff;
+}
+
+.packages .title {
+  font-size: 40rpx;
+  padding: 20rpx 0;
+}
+
+.packages .item {
+  display: flex;
+  padding: 40rpx;
+  margin-bottom: 20rpx;
+  background: #eee;
+}
+
+.packages .item .image {
+  width: 160rpx;
+  height: 160rpx;
+  background: #ccc;
+}
+
+.packages .item .info {
+  flex: 1;
+  padding: 0 20rpx;
+  line-height: 80rpx;
+}
+
+.packages .item .info .h1 {
+  font-size: 44rpx;
+}
+
+.packages .item .info .attrs {
+  font-size: 36rpx;
+  color: #666;
+}
+.packages .item .more {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.packages .item .more .total {
+  height: 100rpx;
+  line-height: 100rpx;
+}
+
+.packages .item .more .refund {
+  flex: 1;
+  padding-top: 20rpx;
+  white-space: nowrap;
+  color: #333;
+}
+
+/* 订单金额 */
+.countdown {
+  padding: 40rpx;
+  margin-bottom: 20rpx;
+  background: #fff;
+}
+
+.countdown .item {
+  display: flex;
+  align-items: center;
+  line-height: 80rpx;
+}
+
+.countdown .item .name {
+  width: 200rpx;
+}
+
+.countdown .item .ctn {
+  flex: 1;
+  text-align: right;
+}
+
+.countdown .item .ctn .origin {
+  padding-right: 20rpx;
+  text-decoration: line-through;
+  color: #999;
+}
+
+.countdown .finaly {
+  margin-top: 40rpx;
+  padding-top: 40rpx;
+  border-top: solid 1rpx #ccc;
+  font-size: 44rpx;
+  text-align: right;
+}
+
+.countdown .finaly .save {
+  font-size: 36rpx;
+  padding-right: 40rpx;
+  color: #999;
+}
+
+/* 配送信息/骑手信息/订单信息 */
+.express,
+.driver,
+.addtion {
+  padding: 40rpx;
+  margin-bottom: 20rpx;
+  background: #fff;
+}
+
+.express .head,
+.driver .head,
+.addtion .head {
+  padding-bottom: 20rpx;
+  font-size: 44rpx;
+}
+
+.express .item, 
+.driver .item, 
+.addtion .item {
+  display: flex;
+  padding: 30rpx 0;
+  align-items: flex-start;
+  line-height: 50rpx;
+  border-bottom: solid 1rpx #f1f1f1;
+}
+
+.express .item:nth-last-child(1),
+.driver .item:nth-last-child(1),
+.addtion .item:nth-last-child(1){
+  border-bottom: none;
+}
+
+.express .item .name,
+.driver .item .name,
+.addtion .item .name {
+  flex: 1;
+  white-space: nowrap;
+}
+
+.express .item .ctn,
+.driver .item .ctn,
+.addtion .item .ctn {
+  flex: 4;
+}
+
+.driver .contact {
+  float: right;
+}
+
+.driver .map {
+  margin-top: 40rpx;
+  height: 400rpx;
+  background: #999;
+}
+
+.addtion .tips {
+  float: right;
+  font-size: 34rpx;
+  color: #999;
+}
+
+.addtion .take {
+  float: right;
+  color: #333;
+}
+
+.addtion {
+  margin-bottom: 0;
+}
+
+/* 操作栏 */
+.actions {
+  display: flex;
+  height: 160rpx;
+  line-height: 160rpx;
+}
+
+.actions .cancel {
+  padding: 0 40rpx;
+  background: #ccc;
+  color: #666;
+}
+
+.actions .continue {
+  flex: 1;
+  padding: 0 40rpx;
+  background: #aaa;
+  text-align: center;
+}

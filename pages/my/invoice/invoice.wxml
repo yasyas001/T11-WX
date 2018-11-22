@@ -1,2 +1,37 @@
 <!--pages/my/invoice/invoice.wxml-->
-<text>pages/my/invoice/invoice.wxml</text>
+<view class="page">
+  <view class="protocal">发票须知</view>
+  <view class="title">发票类型：电子发票<text class="tips">?</text></view>
+  <view class="head">
+    <view class="head-title">发票抬头</view>
+    <view class="head-ctn">
+      <radio-group class="type" bindchange="radioChange">
+        <label class="radio">
+          <radio value="0" checked="true"/>个人
+        </label>
+        <label class="radio">
+          <radio value="0"/>公司
+        </label>
+      </radio-group>
+      <textarea class="text"></textarea>
+    </view>
+  </view>
+  <view class="body">
+    <view class="body-title">发票内容</view>
+    <view class="body-ctn">
+      <radio-group class="type" bindchange="radioChange">
+        <label class="radio">
+          <radio value="0" checked="true"/>明细
+        </label>
+        <label class="radio">
+          <radio value="0"/>商品大类
+        </label>
+      </radio-group>
+      <view class="style"><text>发票样式</text></view>
+    </view>
+  </view>
+  <view class="notice">
+    <view class="notice-title">温馨提示</view>
+    <view class="notice-ctn">礼品卡/提货券支付金额不支持开具发票礼品卡/提货券支付金额不支持开具发票礼品卡/提货券支付金额不支持开具发票</view>
+  </view>
+</view>

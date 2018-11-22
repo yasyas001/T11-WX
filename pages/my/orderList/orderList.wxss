@@ -1,1 +1,87 @@
 /* pages/my/orderList/orderList.wxss */
+.navigator-hover {
+  background: transparent;
+}
+
+.page {
+  padding: 20rpx;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin: 0 -10rpx;
+  padding-bottom: 40rpx;
+}
+
+.tabs .tab-nav {
+  flex: 1;
+  padding: 10rpx 0;
+  margin: 0 10rpx;
+  background: #ccc;
+  font-size: 34rpx;
+  text-align: center;
+}
+
+.list .item {
+  padding-bottom: 40rpx;
+  margin-bottom: 40rpx;
+  border-bottom: solid 1rpx #e1e1e1;
+}
+
+.list .item:nth-last-child(1) {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.list .item .title {
+  display: flex;
+  align-items: center;
+  font-size: 36rpx;
+}
+
+.list .item .title .id {
+  flex: 1;
+}
+
+.list .item .content {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 20rpx;
+  padding: 20rpx;
+  background: #f1f1f1;
+}
+
+.list .item .content .goods {
+  display: flex;
+  align-items: center;
+  padding: 40rpx 0;
+  flex: 1;
+}
+
+.list .item .content .goods .goods-item {
+  width: 100rpx;
+  height: 100rpx;
+  margin-right: 10rpx;
+  border-radius: 50%;
+  background: #ccc;
+}
+
+.list .item .content .goods .more {
+  height: 70rpx;
+}
+
+.list .item .content .total {
+  text-align: right;
+}
+
+.list .item .content .total .num {
+  font-size: 34rpx;
+  color: #aaa;
+}
+
+.list .item .content .total .price {
+  white-space: nowrap;
+  font-size: 36rpx;
+  color: #333;
+}
