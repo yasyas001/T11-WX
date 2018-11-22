@@ -1,2 +1,15 @@
 <!--pages/my/customService/customService.wxml-->
-<text>pages/my/customService/customService.wxml</text>
+<view class="page">
+  <view class="content">
+    <view class="time"><text>2018-11-11 11:11:22</text></view>
+    <view class="from">
+      <view class="avatar"></view>
+      <view class="message">
+        <view class="ctn">您好，我是您的专属客服，请问有什么需要帮忙？</view>
+      </view>
+    </view>
+  </view>
+  <view class="actions">
+    <input></input>
+  </view>
+</view>

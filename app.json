@@ -9,8 +9,7 @@
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black",
-    "enablePullDownRefresh": false
+    "navigationBarTextStyle": "black"
   },
   "tabBar": {
     "color": "#515151",
@@ -64,8 +63,7 @@
         "orderList/orderList",
         "editAddress/editAddress",
         "qrcode/qrcode",
-        "orderDetail/orderDetail",
-        "service/service"
+        "orderDetail/orderDetail"
       ]
     }
   ]
