@@ -69,7 +69,7 @@ App({
       "saveImageToPhotosAlbum": "writePhotosAlbum",
       "saveVideoToPhotosAlbum": "writePhotosAlbum",
       "camera": "camera"
-    }
+    };
     return new Promise((resolve, reject) => {
       wx.authorize({
         scope: `scope.${api[name]}`,
@@ -82,7 +82,7 @@ App({
               fail: (data) => {
                 reject(data);
               }
-            })
+            });
           } else {
             resolve(wx.createCameraContext());
           }
