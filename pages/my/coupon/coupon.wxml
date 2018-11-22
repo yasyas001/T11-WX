@@ -1,1 +1,9 @@
 <!--pages/my/coupon/coupon.wxml-->
+<view class="page">
+  <view class="item" wx:for="{{[1,2,3,4]}}" data-id="{{item}}" bindtap="useCoupon">
+    <view class="ctn"></view>
+    <view class="use">
+      <text>去使用</text>
+    </view>
+  </view>
+</view>

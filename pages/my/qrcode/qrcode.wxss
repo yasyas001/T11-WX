@@ -1,0 +1,33 @@
+/* pages/my/qrcode/qrcode.wxss */
+.page {
+  position: relative;
+  padding: 100rpx 20rpx 20rpx;
+}
+
+.tips {
+  position: absolute;
+  right: 20rpx;
+  top: 20rpx;
+  font-size: 30rpx;
+}
+
+.title {
+  margin-bottom: 20rpx;
+  font-size: 34rpx;
+}
+
+.box {
+  padding: 20rpx;
+  background: #e1e1e1;
+}
+
+.box .number {
+  padding: 20rpx 0 40rpx;
+  text-align: center;
+  font-size: 36rpx;
+}
+
+.box .code {
+  height: 160rpx;
+  background: #ccc;
+}

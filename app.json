@@ -10,7 +10,8 @@
     "pages/my/customService/customService",
     "pages/my/invoice/invoice",
     "pages/my/orderList/orderList",
-    "pages/my/editAddress/editAddress"
+    "pages/my/editAddress/editAddress",
+    "pages/my/qrcode/qrcode"
   ],
   "window": {
     "backgroundTextStyle": "light",

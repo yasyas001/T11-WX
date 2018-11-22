@@ -1,4 +1,4 @@
-// pages/my/coupon/coupon.js
+// pages/my/qrcode/qrcode.js
 Page({
 
   /**
@@ -6,12 +6,6 @@ Page({
    */
   data: {
 
-  },
-
-  useCoupon(e) {
-    let data = e.currentTarget.dataset;
-    console.log(data);
-    wx.navigateTo({url: "../../home/page/shopDetail/shopDetail"});
   },
 
   /**
