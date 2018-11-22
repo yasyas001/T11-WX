@@ -1,0 +1,11 @@
+diff a/app.json b/app.json	(rejected hunks)
+@@ -9,7 +9,8 @@
+     "backgroundTextStyle": "light",
+     "navigationBarBackgroundColor": "#fff",
+     "navigationBarTitleText": "WeChat",
+-    "navigationBarTextStyle": "black"
++    "navigationBarTextStyle": "black",
++    "enablePullDownRefresh": true
+   },
+   "tabBar": {
+     "color": "#515151",

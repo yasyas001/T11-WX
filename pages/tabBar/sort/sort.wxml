@@ -2,7 +2,7 @@
   <view class='shopType'>
     <view wx:for="{{shopType}}" class='column {{shopTypeIndex == index ? "active":""}}' data-type-index="{{index}}" bindtap='choiceType'>{{item}}</view>
   </view>
-  <view class='typeDetail'>
+  <view scroll-y class='typeDetail'>
     <view class='banner'>
       <swiper autoplay="true" interval="3000" duration="500" circular="true">
         <swiper-item wx:for="{{3}}">
@@ -16,18 +16,29 @@
       <view class='tag'>柑橘</view>
       <view class='tag'>葡萄</view>
     </view>
-    <view class='shopList'>
-      <view class='shopInfo' wx:for="{{shopList}}">
-        <image class='shopImg' src='{{item.img}}'></image>
+    <view class='searchShop'>
+      <input type="text" placeholder='搜索'></input>
+    </view>
+    <scroll-view scroll-y class='shopList'>
+      <navigator url='../../home/page/shopDetail/shopDetail' class='shopInfo' wx:for="{{shopList}}" hover-class='none'>
+        <view class='shopImg'>
+          <image src='{{item.img}}'></image>
+          <view>{{item.tag}}</view>
+        </view>
         <view class='info'>
           <view class='shopName'>{{item.name}}</view>
-          <view class='shopPrice'>{{item.price}}元</view>
-          <view class='shopNum'>
-            <text class='curNum'>{{item.num}}</text>
-            <image src='../../../images/jia.png' class='addNum'></image>
+          <view class='shopExplain'>{{item.explain}}</view>
+          <view class='shopSpec'>{{item.spec}}</view>
+          <view class='shopNum' wx:if="{{index == 0}}">
+            <text class='shopPrice'>{{item.price}}元</text>
+            <text>到货提醒</text>
+          </view>
+          <view class='shopNum' wx:else>
+            <text class='shopPrice'>{{item.price}}元</text>
+            <image src='../../../images/jia.png' class='addNum' data-shop-index="{{index}}" catchtap='addNum'></image>
           </view>
         </view>
-      </view>
-    </view>
+      </navigator>
+    </scroll-view>
   </view>
 </view>

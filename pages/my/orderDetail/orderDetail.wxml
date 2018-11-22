@@ -1,0 +1,117 @@
+<!--pages/my/orderDetail/orderDetail.wxml-->
+<view class="page">
+  <!-- 内容 -->
+  <view class="content">
+    <view class="banner"><text>状态banner</text></view>
+    <!-- 收货人 -->
+    <view class="reciver">
+      <view class="base">
+        <view class="name">收货人：韩冰</view>
+        <view class="phone">18602766287</view>
+      </view>
+      <view class="addr">湖北省武汉市洪山区APP广场3栋703室</view>
+    </view>
+    <!-- 订单商品 -->
+    <view class="packages">
+      <view class="package" wx:for="{{order.packages}}" wx:for-item="package">
+        <view class="title">{{package.name}}</view>
+        <view class="list">
+          <navigator class="item" wx:for="{{package.goods}}" url="../../home/page/shopDetail/shopDetail">
+            <view class="image"></view>
+            <view class="info">
+              <view class="h1">{{item.name}}</view>
+              <view class="attrs">{{item.price}}*{{item.num}}</view>
+            </view>
+            <view class="more">
+              <text class="total">{{item.total}}元</text>
+              <view class="refund">申请退款</view>
+            </view>
+          </navigator>
+        </view>
+      </view>
+    </view>
+    <!-- 订单金额 -->
+    <view class="countdown">
+      <view class="item">
+        <view class="name">商品金额</view>
+        <view class="ctn">
+          <text class="origin">120</text>
+          <text class="now">100</text>
+        </view>
+      </view>
+      <view class="item">
+        <view class="name">配送费</view>
+        <view class="ctn">10</view>
+      </view>
+      <view class="item">
+        <view class="name">优惠券</view>
+        <view class="ctn">-20</view>
+      </view>
+      <view class="finaly">
+        <text class="save">共节省10元</text>
+        <text class="pay">实付90.00元</text>
+      </view>
+    </view>
+    <!-- 配送信息 -->
+    <view class="express">
+      <view class="head">配送信息</view>
+      <view class="item">
+        <view class="name">送达时间：</view>
+        <view class="ctn">{{order.express.reciveTime}}</view>
+      </view>
+      <view class="item">
+        <view class="name">收货地址：</view>
+        <view class="ctn">{{order.express.addr}}</view>
+      </view>
+      <view class="item">
+        <view class="name">配送方式：</view>
+        <view class="ctn">{{order.express.type}}</view>
+      </view>
+    </view>
+    <!-- 骑手信息 -->
+    <view class="driver">
+      <view class="head">骑手信息</view>
+      <view class="item">
+        <view class="name">派送员：</view>
+        <view class="ctn">{{order.courier.name}}</view>
+      </view>
+      <view class="item">
+        <view class="name">派送员电话：</view>
+        <view class="ctn">
+          <text>{{order.courier.phone}}</text>
+          <view class="contact">联系他</view>
+        </view>
+      </view>
+      <view class="map"></view>
+    </view>
+    <!-- 订单信息 -->
+    <view class="addtion">
+      <view class="head">订单信息</view>
+      <view class="item">
+        <view class="name">订单号：</view>
+        <view class="ctn">{{order.addtion.no}}</view>
+      </view>
+      <view class="item">
+        <view class="name">下单时间：</view>
+        <view class="ctn">{{order.addtion.orderTime}}</view>
+      </view>
+      <view class="item">
+        <view class="name">支付方式：</view>
+        <view class="ctn">{{order.addtion.payType}}</view>
+      </view>
+      <view class="item">
+        <view class="name">开票信息：</view>
+        <view class="ctn">
+          <text>{{order.addtion.invoice}}</text>
+          <!-- <view class="tips">订单完成后可补开发票</view> -->
+          <navigator class="take" url="../invoice/invoice">开票</navigator>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 操作栏 -->
+  <view class="actions">
+    <view class="cancel">取消订单</view>
+    <view class="continue">继续支付</view>
+  </view>
+</view>

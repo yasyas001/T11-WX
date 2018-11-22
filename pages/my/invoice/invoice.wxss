@@ -1,1 +1,91 @@
 /* pages/my/invoice/invoice.wxss */
+.page {
+  position: relative;
+  padding-top: 60rpx;
+}
+
+.page .protocal {
+  position: absolute;
+  top: 20rpx;
+  right: 40rpx;
+  font-size: 32rpx;
+}
+
+.page .title {
+  padding: 0 40rpx 40rpx;
+  border-bottom: solid 1rpx #f1f1f1;
+  font-size: 38rpx;
+}
+
+.page .title .tips {
+  display: inline-block;
+  margin-left: 20rpx;
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+  font-size: 34rpx;
+  line-height: 40rpx;
+  text-align: center;
+  background: #dbdbdb;
+}
+
+.head {
+  padding: 40rpx;
+  border-bottom: solid 1rpx #f1f1f1;
+  font-size: 38rpx;
+}
+
+.head .type {
+  display: flex;
+  margin: 40rpx 0;
+}
+
+.head .type .radio {
+  flex: 1;
+}
+
+.head .text {
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  padding: 0 10rpx;
+  border: solid 1rpx #e1e1e1;
+  box-sizing: border-box;
+}
+
+.body {
+  padding: 40rpx;
+  border-bottom: solid 1rpx #f1f1f1;
+  font-size: 38rpx;
+}
+
+.body .type {
+  display: flex;
+  margin: 40rpx 0;
+}
+
+.body .type .radio {
+  flex: 1;
+}
+
+.body .style {
+  display: flex;
+  height: 300rpx;
+  align-items: center;
+  justify-content: center;
+  background: #ccc;
+}
+
+.notice {
+  padding: 40rpx;
+}
+
+.notice .notice-title {
+  font-size: 38rpx;
+  padding-bottom: 20rpx;
+}
+
+.notice .notice-ctn {
+  font-size: 34rpx;
+  line-height: 48rpx;
+}

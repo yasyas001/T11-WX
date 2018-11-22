@@ -2,10 +2,27 @@
 <view class="page">
   <!-- tab列表 -->
   <view class="tabs">
-    <view class="tab-nav" wx:for="{{tabs}}">{{item}}</view>
+    <view class="tab-nav" wx:for="{{tabs}}" wx:key="{{item.id}}" data-type="{{item.id}}">{{item.name}}</view>
   </view>
   <!-- 订单列表 -->
   <view class="list">
-    <view class="item"></view>
+    <navigator class="item" wx:for="{{orders}}" url="../orderDetail/orderDetail">
+      <view class="title">
+        <view class="id">订单号：{{item.id}}</view>
+        <view class="state">{{status[item.state]}}</view>
+      </view>
+      <view class="content">
+        <view class="goods">
+          <view class="goods-item"></view>
+          <view class="goods-item"></view>
+          <view class="goods-item"></view>
+          <view class="more">…</view>
+        </view>
+        <view class="total">
+          <view class="num">共{{item.num}}件</view>
+          <view class="price">合计：{{item.price}}元</view>
+        </view>
+      </view>
+    </navigator>
   </view>
 </view>

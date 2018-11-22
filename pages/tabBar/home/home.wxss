@@ -1,7 +1,7 @@
 .head_nav {
   width: 700rpx;
   height: 100rpx;
-  margin: 0 auto; 
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -18,18 +18,23 @@
   margin-right: 10rpx;
 }
 
-.store_addr text {
+.store_info {
+  display: flex;
+  flex-direction: column;
+  color: #666;
+}
+
+.store_info .store_name {
   font-size: 30rpx;
 }
 
-
-.search_shop image {
-  width: 50rpx;
-  height: 50rpx;
+.store_info .store_range {
+  font-size: 24rpx;
 }
 
-.search_shop .qr_code {
-  margin-right: 50rpx;
+.qr_code {
+  width: 50rpx;
+  height: 50rpx;
 }
 
 .pay_code {
@@ -46,6 +51,16 @@
 .pay_code_txt {
   font-size: 24rpx;
   color: #666;
+  display: flex;
+  justify-content: space-between;
+}
+
+.refresh_code {
+  display: flex;
+}
+
+.refreshBtn {
+  margin-right: 20rpx;
 }
 
 .pay_code_image {
@@ -62,20 +77,65 @@
   color: #fff;
 }
 
+.pay_code .tips {
+  font-size: 24rpx;
+  color: #666;
+  width: 100%;
+  text-align: center;
+  margin-top: 10rpx;
+}
+
 #shop {
   padding: 20rpx 25rpx;
   overflow: hidden;
 }
 
+.hotActivity {
+  margin-top: 20rpx;
+  overflow: hidden;
+}
+
+.hotActivity scroll-view {
+  white-space: nowrap;
+}
+
+.hotActivity .active {
+  width: 300rpx;
+  height: 150rpx;
+  text-align: center;
+  line-height: 150rpx;
+  border-radius: 20rpx;
+  background: #f2f2f2;
+  display: inline-block;
+  margin-right: 20rpx;
+}
+
+.hotActivity .title {
+  font-size: 30rpx;
+}
+
+.hotActivity scroll-view {
+  margin-top: 20rpx;
+}
+
+.search_shop input {
+  height: 50rpx;
+  padding-left: 20rpx;
+  font-size: 24rpx;
+  border: 1rpx solid #666;
+  border-radius: 10rpx;
+}
+
 .shop_type {
   white-space: nowrap;
-  overflow: hidden
+  overflow: hidden;
+  margin-top: 50rpx;
 }
 
 .type {
   width: 200rpx;
   margin-right: 20rpx;
-  display:inline-block; 
+  display: inline-block;
 }
 
 .type:nth-last-child(1) {
@@ -152,4 +212,18 @@
 
 .category .column:nth-last-child(1) {
   margin-right: 0;
+}
+
+.riderRange {
+  position: fixed;
+  right: 0;
+  bottom: 200rpx;
+  font-size: 30rpx;
+  width: 230rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  padding-left: 40rpx;
+  background: #666;
+  border-radius: 40rpx 0 0 40rpx;
+  color: #fff;
 }

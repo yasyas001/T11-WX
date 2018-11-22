@@ -38,7 +38,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 12,
+			"current": 13,
 			"list": [
 				{
 					"id": -1,
@@ -108,14 +108,21 @@
 				},
 				{
 					"id": -1,
-					"name": "二维码",
-					"pathName": "pages/my/qrcode/qrcode",
+					"name": "订单详情",
+					"pathName": "pages/my/orderDetail/orderDetail",
 					"query": ""
 				},
 				{
 					"id": -1,
-					"name": "搜索结果",
-					"pathName": "pages/home/page/searchResult/searchResult"
+					"name": "开票",
+					"pathName": "pages/my/invoice/invoice",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "客服",
+					"pathName": "pages/my/service/service",
+					"query": ""
 				}
 			]
 		}

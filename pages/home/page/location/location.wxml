@@ -19,6 +19,6 @@
         <text>编辑</text>
       </view>
     </view>
-    <button class="addAddress">新建地址</button>
+    <button class="addAddress" bindtap='addAddress'>新建地址</button>
   </view>
 </view>

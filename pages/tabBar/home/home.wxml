@@ -2,22 +2,30 @@
   <view class='head_nav'>
     <navigator url='../../home/page/location/location' class='store_addr' hover-class='none'>
       <image src="../../../images/dizhi.png"></image>
-      <text>a门店</text>
+      <view class='store_info'>
+        <text class='store_name'>润城中心</text>
+        <text class='store_range'>距你45km</text>
+      </view>
     </navigator>
-    <view class='search_shop'>
-      <image src='../../../images/saoma.png' class='qr_code' bindtap='scavenging'></image>
-      <image src='../../../images/sousuo.png' class='search' bindtap='searchShop'></image>
-    </view>
+    <image src='../../../images/saoma.png' class='qr_code' bindtap='scavenging'></image>
   </view>
   <view class='pay_code'>
     <view class='content'>
       <view class='pay_code_txt'>
         <text>结账出示</text>
+        <view class='refresh_code'>
+          <view class='refreshBtn'>刷新</view>
+          <text class='bar_code'>1234 1234 1234 1234</text>
+        </view>
       </view>
       <image src='../../../images/code.jpg' class='pay_code_image'></image>
+      <view class='tips'>网络不稳定？加入T11店内WIFI,轻松购物</view>
     </view>
   </view>
   <view id="shop">
+    <view class='search_shop'>
+      <input placeholder='请输入商品名称' confirm-hold="true" bindfocus='searchShop'></input>
+    </view>
     <view class='shop_type'>
       <scroll-view scroll-x="true">
         <view class='type' wx:for="{{shop}}">
@@ -32,6 +40,14 @@
           <view class='item_banner'>banner{{item+1}}</view>
         </swiper-item>
       </swiper>
+    </view>
+    <view class='hotActivity'>
+      <text class='title'>热门活动</text>
+      <scroll-view scroll-y>
+        <navigator url='' class='active' wx:for="{{3}}">
+          <view>活动</view>
+        </navigator>
+      </scroll-view>
     </view>
     <view class='category'>
       <view class='fruits'>
@@ -61,3 +77,4 @@
     </view>
   </view>
 </view>
+<view class='riderRange'>骑手距离1.0KM</view>
