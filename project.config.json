@@ -38,7 +38,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 10,
+			"current": 11,
 			"list": [
 				{
 					"id": -1,
@@ -103,7 +103,13 @@
 				{
 					"id": -1,
 					"name": "订单列表",
-					"pathName": "pages/my/orderList/orderList"
+					"pathName": "pages/my/orderList/orderList",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "二维码",
+					"pathName": "pages/my/qrcode/qrcode"
 				}
 			]
 		}
