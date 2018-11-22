@@ -7,7 +7,16 @@ Page({
    * 页面的初始数据 h
    */
   data: {
-    addressName:"定位中..."
+    address:{
+      name: "定位中...",
+      distanceStr:'',
+      distance:-1,
+      location:{
+        latitude:-1,
+        longitude:-1
+      }
+
+    }
   },
 
   /** 
@@ -17,11 +26,7 @@ Page({
     qqmapsdk = new QQMapWX({
       key: 'R5WBZ-KMXWU-TJTVO-4UOP5-EB4IZ-V2FG7'
     });
-    // wx.chooseLocation({
-    //   success(res) {
-    //     console.log(res);
-    //   }
-    // })
+ 
     const that = this;
     wx.getLocation({
       type: 'wgs84',
@@ -31,9 +36,13 @@ Page({
           poi_options: 'policy=2',
           success: function (res) {
             console.log(res);
+            const address =  that.data.address;
+            address.name = res.result.formatted_addresses.recommend;
+            address.location.latitude = res.result.location.lat;
+            address.location.longitude = res.result.location.lng
+            that.driving(res.result.location.lat + "," + res.result.location.lng, (res.result.location.lat + 0.1) + "," + (res.result.location.lng + 0.1));
             that.setData({
-              addressName: res.result.formatted_addresses
-.recommend
+              address: address
             })
           },
           fail: function (res) {
@@ -122,5 +131,28 @@ Page({
    */
   onShareAppMessage: function() {
 
+  },
+  driving: function (from,to) {
+    var _this = this;
+    //网络请求设置
+    var opt = {
+      //WebService请求地址，from为起点坐标，to为终点坐标，开发key为必填
+      url: 'https://apis.map.qq.com/ws/direction/v1/bicycling/?from='+from+'&to='+to+'&key=R5WBZ-KMXWU-TJTVO-4UOP5-EB4IZ-V2FG7',
+      method: 'GET',
+      dataType: 'json',
+      //请求成功回调
+      success: function (res) {
+        console.log(res);
+        var ret = res.data
+        if (ret.status != 0) return; //服务异常处理
+        const address = _this.data.address;
+        const num =  parseInt(ret.result.routes[0].distance/1000);
+        address.distanceStr = "距您" + num+"km";
+        _this.setData({
+          address: address
+        })
+      }
+    };
+    wx.request(opt);
   }
 })

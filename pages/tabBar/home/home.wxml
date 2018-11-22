@@ -3,13 +3,15 @@
     <navigator url='../../home/page/location/location' class='store_addr' hover-class='none'>
       <image src="../../../images/dizhi.png" mode="aspectFill"></image>
       <view class='store_info'>
-        <text class='store_name'>{{addressName}}</text>
-        <text class='store_range'>距你45km</text>
+        <text class='store_name'>{{address.name}}</text>
+        <text class='store_range'>{{address.distanceStr}}</text>
       </view>
 
     </navigator>
     <image src='../../../images/saoma.png' class='qr_code' bindtap='scavenging'></image>
   </view>
+ 
+  
   <view class='pay_code'>
     <view class='content'>
       <view class='pay_code_txt'>
