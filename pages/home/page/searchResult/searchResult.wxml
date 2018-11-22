@@ -1,0 +1,13 @@
+<view class="container">
+  <view class='notEmpty'></view>
+  <view class='empty'>
+    <view class='emptyImg'>空状态</view>
+    <view class='emptyText'>没有找到相关商品</view>
+  </view>
+  <view class='recommend'>
+    <view class='title'>为你推荐</view>
+    <view class='recommendShopList'>
+      <view class='recommendShop' wx:for="{{6}}">推荐商品</view>
+    </view>
+  </view>
+</view>

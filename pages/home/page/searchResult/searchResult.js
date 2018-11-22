@@ -1,4 +1,4 @@
-// pages/my/service/service.js
+// pages/home/page/searchResult/searchResult.js
 Page({
 
   /**

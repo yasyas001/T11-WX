@@ -1,22 +1,24 @@
 <view class='container'>
   <view class='searchShop'>
-    <input placeholder='请输入商品名称' />
+    <input type='text' placeholder='请输入商品名称' bindconfirm="searchShop" confirm-type="搜索" />
     <text class='cancel_search' bindtap='cancelSearch'>取消</text>
   </view>
   <view class='search hot_search'>
     <text class='title'>热门搜索</text>
     <view class='result_list'>
-      <view>瓜果</view>
-      <view>蔬菜</view>
-      <view>蛋类</view>
+      <view bindtap='searchBtn'>蔬菜</view>
+      <view bindtap='searchBtn'>蛋类</view>
+      <view bindtap='searchBtn'>蔬菜</view>
+      <view bindtap='searchBtn'>蛋类</view>
     </view>
   </view>
   <view class='search history_search'>
-    <text class='title'>历史搜索</text>
+    <view class='header'>
+      <text class='title'>历史搜索</text>
+      <view class='clearHistory' bindtap='clearHistory'>一键清除</view>
+    </view>
     <view class='result_list'>
-      <view>瓜果</view>
-      <view>蔬菜</view>
-      <view>蛋类</view>
+      <view wx:for="{{hisroty}}" bindtap='searchBtn'>{{item}}</view>
     </view>
   </view>
 </view>

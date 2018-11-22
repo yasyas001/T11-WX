@@ -50,3 +50,13 @@
 .history_search {
   margin-top: 30rpx;
 }
+
+.history_search .header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.history_search .clearHistory {
+  font-size: 24rpx;
+  color: #666;
+}

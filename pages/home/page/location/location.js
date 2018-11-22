@@ -16,6 +16,15 @@ Page({
   },
 
   /**
+   * 新建地址
+   */
+  addAddress() {
+    wx.navigateTo({
+      url: '../../../my/editAddress/editAddress',
+    })
+  },
+
+  /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {

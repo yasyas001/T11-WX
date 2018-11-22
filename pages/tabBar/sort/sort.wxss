@@ -1,9 +1,12 @@
 .container {
-  padding: 20rpx;
   overflow: hidden;
   display: flex;
   justify-content: space-between;
-  height: 100%;
+  position: fixed;
+  left: 20rpx;
+  top: 20rpx;
+  right: 20rpx;
+  bottom: 0;
 }
 
 .shopType {
@@ -30,6 +33,8 @@
 .typeDetail {
   width: 480rpx;
   height: 100%;
+  overflow: hidden;
+  position: relative;
 }
 
 .typeDetail .banner {
@@ -69,30 +74,60 @@
   margin-right: 0;
 }
 
+.shopList {
+  position: absolute;
+  top: 275rpx;
+  left: 0;
+  bottom: 50rpx;
+  right: 0;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
 .shopInfo {
   margin-top: 20rpx;
   display: flex;
 }
 
 .shopImg {
-  width: 150rpx;
-  height: 150rpx;
   margin-right: 20rpx;
+  position: relative;
 }
 
-.shopInfo .info  {
+.shopImg image {
+  width: 200rpx;
+  height: 200rpx;
+  display: block;
+}
+
+.shopImg view {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 24rpx;
+  width: 80rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  background: #666;
+  color: #fff;
+}
+
+.shopInfo .info {
   flex: 1;
-  height: 150rpx;
+  height: 200rpx;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .shopInfo .info view {
-  font-size: 24rpx; 
+  font-size: 24rpx;
   margin-bottom: 15rpx;
-  height: 40rpx;
-  line-height: 40rpx;
 }
 
 .shopInfo .info view:nth-last-child(1) {
@@ -109,4 +144,15 @@
 .shopNum .addNum {
   width: 30rpx;
   height: 30rpx;
+}
+
+.searchShop {
+  font-size: 30rpx;
+  margin-top: 25rpx;
+}
+
+.searchShop input {
+  height: 50rpx;
+  padding-left: 20rpx;
+  border: 2rpx solid #666;
 }

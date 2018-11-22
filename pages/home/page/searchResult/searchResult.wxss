@@ -1,0 +1,45 @@
+.container {
+  width: 700rpx;
+  margin: 0 auto;
+}
+
+.emptyImg {
+  width: 150rpx;
+  height: 150rpx;
+  background: #f2f2f2;
+  font-size: 30rpx;
+  border-radius: 75rpx;
+  text-align: center;
+  line-height: 150rpx;
+  margin: 30rpx auto;
+}
+
+.emptyText {
+  font-size: 24rpx;
+  text-align: center;
+}
+
+.recommend {
+  margin-top: 50rpx;
+}
+
+.recommend .title {
+  font-size: 30rpx;
+  text-align: center;
+}
+
+.recommendShopList {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.recommendShop {
+  width: 325rpx;
+  height: 200rpx;
+  line-height: 200rpx;
+  text-align: center;
+  font-size: 24rpx;
+  background: #f2f2f2;
+  margin-top: 30rpx;
+}

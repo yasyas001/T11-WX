@@ -3,14 +3,33 @@
     <image src="../../../../images/shop.jpg"></image>
   </view>
   <view class='shopInfo'>
-    <view class='shopName'>品名: 柑橘</view>
+    <view class='shopName'>zespri佳沛 新西兰绿奇异果特大</view>
     <navigator url='../share/share' class='share'>分享</navigator>
-    <view class='shopPrice'>价格: 9.9元</view>
-    <view class='shopSpec'>规格选择</view>
+    <view class='shopExplain'>满口酸甜"大"为观止,漂洋过海来见你</view>
+    <view class='shopPrice'>
+      <view class='curPrice'>48.80</view>
+      <view class='priceTags'>
+        <view>促销价</view>
+        <view>原价79.90</view>
+      </view>
+    </view>
+    <view class='shopSpec'>140-170g*6个</view>
     <view class='shopTags'>
       <view class='tag'>品質保障</view>
       <view class='tag'>新鮮保障</view>
       <view class='tag'>急速送達</view>
+    </view>
+    <view class='shopDiscount'>
+      <view>满39减10</view>
+    </view>
+    <view class='deliveryInfo'>
+      <view class='expectedService'>
+        <view class='img'></view>
+        <text>现在下单,预计今日14:30送达</text>
+      </view>
+      <view class='serviceTags'>
+        <view>免运费</view>
+      </view>
     </view>
     <view class='shopDetail'>
       <text>商品詳情</text>

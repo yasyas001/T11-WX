@@ -9,40 +9,67 @@ Page({
     shopTypeIndex: 0,
     shopList: [{
         img: '../../../images/shop.jpg',
-        name: '柑橘',
+        name: 'Zeespri佳沛',
+        explain: '新西兰绿奇异果特大',
+        spec: '140-170*6个',
+        tag: '标签',
         price: 9.9,
-        num: 1
-      },
-      {
-        img: '../../../images/shop1.jpg',
-        name: '苹果',
-        price: 6.6,
-        num: 1
-      },
-      {
-        img: '../../../images/shop2.jpg',
-        name: '葡萄',
-        price: 6.6,
         num: 1
       },
       {
         img: '../../../images/shop.jpg',
-        name: '柑橘',
+        name: 'Zeespri佳沛',
+        explain: '新西兰绿奇异果特大',
+        spec: '140-170*6个',
+        tag: '标签',
         price: 9.9,
         num: 1
       },
       {
-        img: '../../../images/shop1.jpg',
-        name: '苹果',
-        price: 6.6,
+        img: '../../../images/shop.jpg',
+        name: 'Zeespri佳沛',
+        explain: '新西兰绿奇异果特大',
+        spec: '140-170*6个',
+        tag: '标签',
+        price: 9.9,
         num: 1
       },
       {
-        img: '../../../images/shop2.jpg',
-        name: '葡萄',
-        price: 6.6,
+        img: '../../../images/shop.jpg',
+        name: 'Zeespri佳沛',
+        explain: '新西兰绿奇异果特大',
+        spec: '140-170*6个',
+        tag: '标签',
+        price: 9.9,
         num: 1
-      }
+      },
+      {
+        img: '../../../images/shop.jpg',
+        name: 'Zeespri佳沛',
+        explain: '新西兰绿奇异果特大',
+        spec: '140-170*6个',
+        tag: '标签',
+        price: 9.9,
+        num: 1
+      },
+      {
+        img: '../../../images/shop.jpg',
+        name: 'Zeespri佳沛',
+        explain: '新西兰绿奇异果特大',
+        spec: '140-170*6个',
+        tag: '标签',
+        price: 9.9,
+        num: 1
+      },
+      {
+        img: '../../../images/shop.jpg',
+        name: 'Zeespri佳沛',
+        explain: '新西兰绿奇异果特大',
+        spec: '140-170*6个',
+        tag: '标签',
+        price: 9.9,
+        num: 1
+      },
     ]
   },
 
@@ -61,6 +88,18 @@ Page({
     this.setData({
       shopTypeIndex: typeIndex
     })
+  },
+
+  /**
+   * 添加数量
+   */
+  addNum(e) {
+    var shopIndex = e.target.dataset.shopIndex
+    var shoplist = this.data.shopList
+    shoplist[shopIndex].num++
+      this.setData({
+        shopList: shoplist
+      })
   },
 
   /**
