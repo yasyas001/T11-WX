@@ -1,0 +1,9 @@
+<!--pages/my/qrcode/qrcode.wxml-->
+<view class="page">
+  <view class="tips">支付说明</view>
+  <view class="title">请将此条形码对准自助收银扫描去，识别会员</view>
+  <view class="box">
+    <view class="number">点击查看数字</view>
+    <view class="code"></view>
+  </view>
+</view>

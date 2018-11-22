@@ -1,2 +1,11 @@
 <!--pages/my/orderList/orderList.wxml-->
-<text>pages/my/orderList/orderList.wxml</text>
+<view class="page">
+  <!-- tab列表 -->
+  <view class="tabs">
+    <view class="tab-nav" wx:for="{{tabs}}">{{item}}</view>
+  </view>
+  <!-- 订单列表 -->
+  <view class="list">
+    <view class="item"></view>
+  </view>
+</view>

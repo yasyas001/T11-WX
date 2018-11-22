@@ -1,1 +1,28 @@
 /* pages/my/coupon/coupon.wxss */
+.page {
+  padding: 20rpx;
+}
+
+.item {
+  display: flex;
+  height: 200rpx;
+  margin-bottom: 40rpx;
+  border-radius: 10rpx;
+  background: #ccc;
+}
+
+.item .ctn {
+  flex: 1;
+}
+
+.item .use {
+  position: relative;
+  width: 160rpx;
+}
+
+.item .use text {
+  position: absolute;
+  right: 20rpx;
+  bottom: 20rpx;
+  font-size: 36rpx;
+}
