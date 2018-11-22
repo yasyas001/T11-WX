@@ -64,8 +64,7 @@
         "orderList/orderList",
         "editAddress/editAddress",
         "qrcode/qrcode",
-        "orderDetail/orderDetail",
-        "service/service"
+        "orderDetail/orderDetail"
       ]
     }
   ]
