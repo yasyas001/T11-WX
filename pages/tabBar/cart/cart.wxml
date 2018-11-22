@@ -17,7 +17,7 @@
           <text class="title">￥{{item.price}}</text>
         </navigator>
         <counter value="{{num[item.id]}}" min="1" max="11"></counter>
-        <view class="delete"><text>删除</text></view>
+        <view bindtap='clickSku' data-index="{{index}}" class="delete"><text>删除</text></view>
       </view>
     </view>
   </checkbox-group>
