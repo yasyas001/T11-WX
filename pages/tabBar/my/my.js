@@ -1,7 +1,6 @@
 // pages/my/my.js
 const app = getApp()
 Page({
-
   /**
    * 页面的初始数据
    */
@@ -92,7 +91,6 @@ Page({
    */
   onPullDownRefresh: function () {
     wx.showNavigationBarLoading();
-    console.log(11);
     setTimeout(function(){
       wx.hideNavigationBarLoading();
       wx.stopPullDownRefresh();
