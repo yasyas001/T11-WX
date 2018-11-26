@@ -1,3 +1,7 @@
+.navigator-hover {
+  background: transparent;
+}
+
 page {
   display: flex;
   flex-direction: column;
@@ -23,10 +27,36 @@ page {
   width: 0rpx;
 }
 
+/* 活动信息 */
+.activity {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20rpx;
+  line-height: 40rpx;
+}
+
+.activity .tag {
+  background: #ccc;
+  padding: 4rpx 6rpx;
+  font-size: 24rpx;
+}
+
+.activity .info {
+  flex: 1;
+  padding: 4rpx 10rpx 0;
+  font-size: 24rpx;
+}
+
+.activity .checkout {
+  padding-top: 4rpx;
+  font-size: 30rpx;
+}
+
 /* 购物车列表 */
 .cart-list {
   padding: 20rpx;
 }
+
 .goods-item {
   display: flex;
   margin-bottom: 20rpx;
@@ -54,7 +84,13 @@ page {
 
 .goods-item .info {
   padding: 0 20rpx;
+  font-size: 36rpx;
 }
+
+.goods-item .price {
+  font-size: 32rpx;
+}
+
 .goods-item .attrs {
   padding: 10rpx 0;
 }
@@ -64,6 +100,10 @@ page {
   font-size: 30rpx;
   line-height: 40rpx;
   white-space: nowrap;
+}
+
+.goods-item .counter {
+  align-self: flex-end;
 }
 
 .goods-item .delete {
@@ -85,7 +125,7 @@ page {
   display: block;
   margin: 30rpx 0 20rpx;
   text-align: center;
-  font: 50rpx;
+  font-size: 36rpx;
 }
 
 .recommend .list {

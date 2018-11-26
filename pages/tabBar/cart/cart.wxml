@@ -3,6 +3,11 @@
 <view class="content">
   <!-- 购物车商品列表 -->
   <checkbox-group class="cart-list" bindchange="checkedGoods">
+    <view class="activity">
+      <view class="tag">换购</view>
+      <view class="info">购满100.00元,可换购超值商品，还差20.00元</view>
+      <navigator class="checkout">查看活动</navigator>
+    </view>
     <view wx:for="{{goods}}" wx:key="{{index}}" class="goods-item">
       <view class="box" animation="{{animations[index]}}" data-index="{{index}}" bind:touchstart="logTouchDirection" bind:touchend="canShowDelete">
         <label class="checkbox"><checkbox value="{{item.id}}" checked="{{checked[index]}}"></checkbox></label>
@@ -11,12 +16,10 @@
           <text class="title">{{item.title}}</text>
           <view class="attrs">
             <text>{{item.spec}}</text>
-            <text>{{item.prepare}}</text>
-            <text>{{item.reach}}</text>
           </view>
-          <text class="title">￥{{item.price}}</text>
+          <text class="price">￥{{item.price}}</text>
         </navigator>
-        <counter value="{{num[item.id]}}" min="1" max="11"></counter>
+        <counter class="counter" value="{{num[item.id]}}" min="1" max="11"></counter>
         <view class="delete"><text>删除</text></view>
       </view>
     </view>
