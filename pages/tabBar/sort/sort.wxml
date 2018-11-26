@@ -35,7 +35,8 @@
           </view>
           <view class='shopNum' wx:else>
             <text class='shopPrice'>{{item.price}}元</text>
-            <image src='../../../images/jia.png' class='addNum' data-shop-index="{{index}}" catchtap='addNum'></image>
+            <image src='../../../images/jia.png' mode="aspectFill" class='addNum' data-shop-index="{{index}}" catchtap='addNum'></image>
+
           </view>
         </view>
       </navigator>

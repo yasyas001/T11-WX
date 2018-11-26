@@ -1,14 +1,17 @@
 <view class="container">
   <view class='head_nav'>
     <navigator url='../../home/page/location/location' class='store_addr' hover-class='none'>
-      <image src="../../../images/dizhi.png"></image>
+      <image src="../../../images/dizhi.png" mode="aspectFill"></image>
       <view class='store_info'>
-        <text class='store_name'>润城中心</text>
-        <text class='store_range'>距你45km</text>
+        <text class='store_name'>{{address.name}}</text>
+        <text class='store_range'>{{address.distanceStr}}</text>
       </view>
+
     </navigator>
     <image src='../../../images/saoma.png' class='qr_code' bindtap='scavenging'></image>
   </view>
+ 
+  
   <view class='pay_code'>
     <view class='content'>
       <view class='pay_code_txt'>
@@ -54,7 +57,7 @@
         <text class='title'>水果</text>
         <scroll-view scroll-x class='column_list'>
           <navigator url='../../home/page/shopDetail/shopDetail' wx:for="{{5}}" class='column'>
-            <image src='../../../images/shop.jpg'></image>
+            <image src='../../../images/shop.jpg' mode="aspectFill"></image>
           </navigator>
         </scroll-view>
       </view>
@@ -62,7 +65,7 @@
         <text class='title'>肉类</text>
         <scroll-view scroll-x class='column_list'>
           <navigator url='../../home/page/shopDetail/shopDetail' wx:for="{{5}}" class='column'>
-            <image src='../../../images/meat.jpg'></image>
+            <image src='../../../images/meat.jpg' mode="aspectFill"></image>
           </navigator>
         </scroll-view>
       </view>
@@ -70,7 +73,7 @@
         <text class='title'>蛋类</text>
         <scroll-view scroll-x class='column_list'>
           <navigator url='../../home/page/shopDetail/shopDetail' wx:for="{{5}}" class='column'>
-            <image src='../../../images/eggs.jpg'></image>
+            <image src='../../../images/eggs.jpg' mode="aspectFill"></image>
           </navigator>
         </scroll-view>
       </view>
